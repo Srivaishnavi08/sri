@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment{
+    PATH="C:\Windows\system32"
+    }
     stages {
         stage('Git Clone') {
             steps {
